@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__about {
+    display: flex;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+
+.header__name,
+.header__work-name {
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.header__name {
+    font-size: 55px;
+    line-height: 65px;
+    font-weight: 700;
+    writing-mode: vertical-lr;
+}
+
+.header__work-name {
+    font-size: 23px;
+    font-weight: 200;
+    writing-mode: vertical-lr;
+}
+
+/* contacts */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.contacts-list-item {
+    font-size: 13px;
+    font-weight: 100;
+    color: #b7b7b7;
+}
+
+/* content */
+
+.content {
+    width: 100%;
+    padding: 120px;
+}
+
+.content-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.content-item:first-child {
+    margin-bottom: 100px;
+}
+
+.content-item:nth-child(2),
+.content-item:nth-child(3) {
+    margin-bottom: 80px;
+}
+
+.university:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.university-title {
+    margin-bottom: 5px;
+}
+
+.university-description {
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.experience {
+    display: flex;
+}
+
+.experience:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.experience-description-list {
+    margin: 0 20px;
+}
+
+.experience-old {
+    list-style-type: unset;
+    margin: 0 20px;
+}
+
+.experience-description-list-item {
+    color: #b7b7b7;
+    position: relative;
+}
+
+.experience-description-list-item::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: -15px;
+    top: 8px
+}
+
+.experience-description-title {
+    font-weight: 600;
+}
+
+.experience-description-title:not(:first-child) {
+    margin-bottom: 10px;
+}
+
+.skills {
+    width: fit-content;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14px;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    color: #b7b7b7;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 11px;
+}
+
+.skill-progress-box {
+    width: 240px;
+    height: 14px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.skill-progress,
+.skill-progress-black {
+    width: 100%;
+    height: 100%;
+}
+
+.skill-progress {
+    background-color: #d8d8d8;
+}
+
+.skill-progress-black {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.progress-75 {
+    width: 75%;
+}
+
+.progress-50 {
+    width: 50%;
+}
