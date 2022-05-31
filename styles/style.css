@@ -203,3 +203,160 @@ ul {
 .progress-50 {
     width: 50%;
 }
+
+.line,
+.line__660 {
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: row;
+        position: relative;
+    }
+
+
+    .line {
+        position: absolute;
+        height: 45%;
+        width: 2px;
+        background-color: white;
+        top: 100px;
+        left: 59%;
+    }
+
+    .header__about {
+        transform: rotate(0);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contacts {
+        margin: 0;
+    }
+
+    .header__name,
+    .header__work-name {
+        writing-mode: unset;
+    }
+}
+
+@media (max-width: 750px) {
+    .line {
+        height: 2px;
+        width: 80%;
+        top: 300px;
+        left: 12%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .contacts {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    .content {
+        padding: 120px 40px 120px 40px;
+    }
+
+    .header {
+        padding: 70px 80px;
+    }
+
+    .header__name {
+        font-size: 37px;
+        line-height: 42px;
+    }
+
+    .header__work-name {
+        font-size: 16px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .line__660 {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        top: 130px;
+    }
+
+    .skill-progress-box {
+        width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 70px 40px;
+    }
+
+    .content {
+        padding: 60px 40px;
+    }
+
+    .content-title {
+        font-size: 20px;
+    }
+
+    .about-text {
+        font-size: 12px;
+    }
+
+    .content-item:first-child {
+        margin-bottom: 60px;
+    }
+
+    .content-item:nth-child(2),
+    .content-item:nth-child(3) {
+        margin-bottom: 60px;
+    }
+
+    .university-title {
+        font-size: 15px;
+    }
+
+    .university-description {
+        font-size: 14px;
+    }
+
+    .skill-name {
+        font-size: 12px;
+    }
+
+    .skill-progress-box {
+        width: 100px;
+    }
+
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience-description-title {
+        font-size: 14px;
+    }
+
+    .experience-old {
+        margin: 0;
+        margin-bottom: 10px;
+        list-style-type: none;
+    }
+
+    .experience-description-list-item {
+        font-size: 14px;
+    }
+
+    .experience:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
